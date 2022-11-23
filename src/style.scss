@@ -1166,18 +1166,18 @@ input[type=range]::-ms-track {
     }
 }
 
-.volume {
+.volume_slider {
     -webkit-appearance: none;
     width: 198px;
     height: 15px;
     background: transparent;
 }
 
-.volume:focus {
+.volume_slider:focus {
     outline: none;
 }
 
-.volume::-webkit-slider-thumb {
+.volume_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
     height: 15px;
@@ -1187,7 +1187,7 @@ input[type=range]::-ms-track {
     cursor: pointer;
 }
 
-.volume::-webkit-slider-runnable-track {
+.volume_slider::-webkit-slider-runnable-track {
     width: 198px;
     height: 15px;
     cursor: pointer;
@@ -1251,6 +1251,14 @@ input[type=range]::-ms-track {
     height: 311px;
     background-color: $info_blocks_light_theme;
     border-radius: 13px;
+    font-family: 'Roboto Regular';
+    color: $text_dark;
+    font-size: 18px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .next_level {

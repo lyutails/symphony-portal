@@ -16,6 +16,9 @@ export function createNextLevelButton() {
     return nextLevel;
 } 
 
+export const songInfo = document.createElement('div');
+songInfo.classList.add('song_info');
+
 export const createSong = (song, isRight, nextLevel) => {
     const songHolder = document.createElement('div');
     songHolder.classList.add('song_holder');    
@@ -36,6 +39,7 @@ export const createSong = (song, isRight, nextLevel) => {
         songHolder.style.backgroundColor = `${isRight ? 'blue' : 'red'}`;
         songNameHolder.textContent = isRight ? musicEng[state.currentStep][state.correctAnswer].song_name : '*****';  
         songPic.style.backgroundImage = isRight ? musicEng[state.currentStep][state.correctAnswer].image : '../refs/light/piano.png';
+        songInfo.textContent = isRight ? musicEng[state.currentStep][state.correctAnswer].description : 'lalalala';
         if (isRight) nextLevel.classList.toggle('disabled');         
     })
     return songHolder;

@@ -3,7 +3,7 @@ import { createTab } from '../components/tabs';
 import { state } from '../utils/globals';
 import { random } from '../utils/random';
 import { musicEng } from '../music_data.js';
-import { createNextLevelButton, createSong, songNameHolder, songPic } from '../components/song';
+import { createNextLevelButton, createSong, songInfo, songNameHolder, songPic } from '../components/song';
 import { header } from "../components/header";
 
 export function quizPage() {
@@ -154,23 +154,25 @@ export function quizPage() {
         volumeIcon.classList.toggle('active');
     })
 
-    const volume = document.createElement('input');
-    volume.classList.add('volume');
-    volume.setAttribute('type', 'range');
-    volumeContainer.appendChild(volume);
-    volume.value = '99';
-    volume.min = '1';
-    volume.max = '100';
-    volume.onchange = setVolume();    
+    const volumeSlider = document.createElement('input');
+    volumeSlider.classList.add('volume_slider');
+    volumeSlider.setAttribute('type', 'range');
+    volumeContainer.appendChild(volumeSlider);
+    volumeSlider.value = '99';
+    volumeSlider.min = '1';
+    volumeSlider.max = '100';
+    volumeSlider.onchange = setVolume();    
 
     let track_index = random(0, 6);
     let isPlaying = false;
     let updateTimer;
     state.correctAnswer = track_index;
 
-    let current_track = document.createElement('audio');
+    let current_track = document.createElement('audio');    
 
     let track_list_eng = musicEng;
+
+    loadTrack(track_index);
 
     function loadTrack(track_index) {
         clearInterval(updateTimer);
@@ -186,6 +188,9 @@ export function quizPage() {
         currentTime.textContent = '00:00';
         totalDuration.textContent = '00:00';
         player.value = 0;
+        current_track.src = '';
+        current_track.currentTime = 0;
+        isPlaying = false;
     }
 
     function playpauseTrack() {
@@ -193,8 +198,7 @@ export function quizPage() {
         else pauseTrack();
     }
 
-    playPause.addEventListener('click', () => {        
-        loadTrack(track_index);    
+    playPause.addEventListener('click', () => {          
         playpauseTrack();
     })
 
@@ -214,7 +218,7 @@ export function quizPage() {
     }
 
     function setVolume() {
-        // current_track.volume = volume.value / 100;
+        //current_track.volume = volumeSlider.value / 100;
     }
 
     function seekUpdate() {
@@ -277,9 +281,7 @@ export function quizPage() {
         const song = createSong(item, i === track_index, nextLevel);
         songsHolder.appendChild(song);         
     })
-
-    const songInfo = document.createElement('div');
-    songInfo.classList.add('song_info');
+    
     info.appendChild(songInfo);   
 
     quizBlock.appendChild(nextLevel);
@@ -297,6 +299,9 @@ export function quizPage() {
                 songsHolder.appendChild(song);        
             })                        
             loadTrack(track_index);
+            playPause.classList.add('active');
+            songNameHolder.textContent = musicEng.song_name = '*****';
+            songInfo.textContent = '';                        
         }
     })
 
