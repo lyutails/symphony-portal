@@ -1,5 +1,4 @@
 import './style.scss';
-import '../refs/music/classic_western/Beethoven_Fur_Elise.mp3';
 import { homePage } from './pages/home_page';
 import { quizPage } from './pages/quiz_page';
 import { galleryPage } from './pages/gallery_page';
