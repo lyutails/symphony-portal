@@ -45,6 +45,11 @@ export function homePage() {
     menuLeft.classList.add('active');
     menuLeft.href = '#/homePage/';
 
+    menuLeft.addEventListener('click', function(i) {
+        menuRight.classList.remove('active');        
+        menuCenter.classList.remove('active');
+    })
+
     const home = document.createElement('span');
     home.innerText = 'home';
     home.classList.add('home');
@@ -63,7 +68,7 @@ export function homePage() {
     const menuRight = document.createElement('a');
     menuRight.classList.add('menu_right');
     mainMenu.appendChild(menuRight);
-    menuRight.href = '#/galleryPage/';
+    menuRight.href = '#/galleryPage/';    
 
     const gallery = document.createElement('span');
     gallery.innerText = 'gallery';

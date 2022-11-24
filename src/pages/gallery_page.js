@@ -42,7 +42,6 @@ export function galleryPage() {
     const menuLeft = document.createElement('a');
     menuLeft.classList.add('menu_left');
     mainMenu.appendChild(menuLeft);
-    menuLeft.classList.add('active');
     menuLeft.href = '#/homePage/';
     
     const home = document.createElement('span');
@@ -63,7 +62,14 @@ export function galleryPage() {
     const menuRight = document.createElement('a');
     menuRight.classList.add('menu_right');
     mainMenu.appendChild(menuRight);
+    menuRight.classList.add('active');
     menuRight.href = '#/galleryPage/';
+
+    menuRight.addEventListener('click', function(d) {
+        menuRight.classList.add('active');
+        menuLeft.classList.remove('active');
+        menuCenter.classList.remove('active');
+    })
     
     const gallery = document.createElement('span');
     gallery.innerText = 'gallery';

@@ -63,6 +63,7 @@ export function quizPage() {
     menuCenter.addEventListener('click', function(d) {
         menuCenter.classList.add('active');
         menuLeft.classList.remove('active');
+        menuRight.classList.remove('active');
     })
 
     const quiz = document.createElement('span');
@@ -286,21 +287,21 @@ export function quizPage() {
 
     quizBlock.appendChild(nextLevel);
 
-    nextLevel.addEventListener('click', () => {        
+    nextLevel.addEventListener('click', () => {               
         if(!nextLevel.classList.contains('disabled')) {
             state.currentStep++;
             tabs[state.currentStep].classList.add('active');
-            nextLevel.classList.add('disabled');
-            songsHolder.replaceChildren();
-            console.log(state.currentStep);
+            nextLevel.classList.add('disabled');            
+            songsHolder.replaceChildren();   
             track_index = random(0, 6);
+            state.correctAnswer = track_index;
             musicEng[state.currentStep].map((item, i) => {
                 const song = createSong(item, i === track_index, nextLevel);
                 songsHolder.appendChild(song);        
             })                        
             loadTrack(track_index);
             playPause.classList.add('active');
-            songNameHolder.textContent = musicEng.song_name = '*****';
+            songNameHolder.textContent = '*****';
             songInfo.textContent = '';                        
         }
     })

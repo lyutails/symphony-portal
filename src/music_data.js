@@ -29,7 +29,7 @@ import swanLake from '../refs/music/classic_russian/Tchaikovsky_Swan_Lake.mp3';
 import waltzNoTwo from '../refs/music/waltz/Shostakovich_Waltz_No_2.mp3';
 import minuteWaltz from '../refs/music/waltz/Chopin_Minute_Waltz.mp3';
 import flowerWaltz from '../refs/music/waltz/Tchaikovsky_Waltz_of_the_Flowers.mp3';
-import blueDanubeWaltz from '../refs/music/waltz/Strauss_The_Blue_Danube_Waltz.mp3';
+import valseTiersen from '../refs/music/waltz/Yann_Tiersen_La_valse.mp3';
 import sleepingBeauty from '../refs/music/waltz/Tchaikovsky_Sleeping_Beauty_Waltz.mp3';
 import mephistoWaltz from '../refs/music/waltz/Liszt_Mephisto_Waltz.mp3';
 
@@ -67,10 +67,20 @@ export const musicEng = [
         id: 1,
         song_artist: 'Ludwig van Beethoven',
         song_name: 'Für Elise',
-        description: `Musically, it is a five-part rondo with the form ABACA. 
-        It is in the key of A minor, which gives it a sad or wistful sound, full 
-        of regret and longing. The repeating A section is the most recognized part of Für Elise. 
-        It is the easiest section to learn and play.`,
+        description: `Beethoven wrote Für Elise 1810 as a small piece for the piano, and then put it
+         aside with his many other draft works. We only have it because a musicologist found it and
+          published it in 1867! And it's a good thing for us that Für Elise was finally found! Its 
+          first five notes (alternating E and D-sharp) have become as famous as the booming 
+          da-da-da-dum first notes of Beethoven’s 5th Symphony. Musically, Für Elise is deeply 
+          melodic and full of nostalgic feeling, with a relatively simple harmony that makes it very 
+          accessible and not overly intellectually demanding. At the same time, because its first 
+          part is easy even for a beginner piano player to learn, but is also beautiful, 
+          it is often assigned by piano teachers the world over, perpetuating its fame. As part 
+          of the Romantic music movement that explored beautifully terrifying and unknowable spiritual 
+          and emotional experiences, Für Elise contrasts the sad wistfulness of its main theme with 
+          the unpredictable wildness of its other two themes. Für Elise was lost for over 50 years 
+          until a musicologist found it and published it after Beethoven's death. And then that final 
+          draft copy was lost again and has never been found.`,
         path: furElise,
         //image: furElisePic,
     },
@@ -224,7 +234,7 @@ export const musicEng = [
         id: 13,
         song_artist: 'Dmitri Shostakovich',
         song_name: 'Second Waltz',
-        description: `Familiar to many as the soundtrack to the film Eyes Wide Shut, dmitri shostakovich’s Waltz No. 2 
+        description: `Familiar to many as the soundtrack to the film Eyes Wide Shut, Dmitri Shostakovich’s Waltz No. 2 
         from the Suite for Variety Orchestra – which is better known as Jazz Suite No. 2 – has mysterious, lascivious 
         qualities that call to mind circus or variety music. stefan Potzmann has arranged this dramatic russian performance 
         piece for four clarinets, thus adding another wellknown classic to the instrumental literature now available.`,
@@ -258,11 +268,11 @@ export const musicEng = [
     },
     {
         id: 16,
-        song_artist: 'Johann Strauss II',
-        song_name: 'Dance of the Sugar Plum Fairy',
-        description: `The work epitomizes the symphonic richness and variety of Strauss’s dance music, 
-        which earned him acclaim as the “waltz king,” and it has become the best-known of his many dance pieces.`,
-        path: blueDanubeWaltz,
+        song_artist: 'Yann Tiersen',
+        song_name: "La valse d'Amélie",
+        description: `An extended piano version of the incredible song called "La Valse d'Amélie", 
+        originally played and composed by Yann Tiersen.`,
+        path: valseTiersen,
         //image: blueDanubeWaltzPic,
     },
     {
@@ -298,7 +308,14 @@ export const musicEng = [
         id: 19,
         song_artist: 'Ludovico Einaudi',
         song_name: 'Nuvole Bianche',
-        description: `about`,
+        description: `The title of this work by Ludovico Einaudi means, simply, white clouds, 
+        and it’s a title which perfectly captures the calm atmosphere conveyed in this work for solo piano.
+        It’s emotional, beautiful and the piece builds as it progresses. Nuvole Bianche is one of Einaudi’s 
+        most commercially-successful works. It is the minimalist approach that catches the ear of his dedicated listeners. 
+        The sequence of opening chords sits at the core of this work and the statement returns later in the piece.  
+        This piece might “sound” like a classical composition, but when you look at the structure and chords 
+        it’s actually much closer to a pop-progression. That’s because it uses 4 chords, and those chords 
+        are the very well-known 1-5-4-6 chords, but in a 6-4-1-5 order.`,
         path: nuvoleBianche,
         //image: nuvoleBianchePic,
     },
@@ -306,7 +323,18 @@ export const musicEng = [
         id: 20,
         song_artist: 'Joe Hisaishi',
         song_name: 'One Summer’s Day',
-        description: `about`,
+        description: `Every element of Spirited Away makes it easy to get caught up in the story of a young 
+        girl who must navigate the spirit world in order to return herself and her parents to the human world.
+        But the music is an especially potent part of the film’s power. The man responsible for the film’s 
+        music is Joe Hisaishi, who has worked on almost allof Hayao Miyazaki’s films and has released more 
+        than 100 film scores and solo albums over the course of his career. 
+        The score to Spirited Away is a lush, sweeping aural adventure, and the crown jewel of it all 
+        is “One Summer’s Day,” the opening track. “One Summer’s Day” emphasizes the focus on Chihiro 
+        with a returning focus on the piano. The orchestration might grow and evolve around it, 
+        but the piano almost always carries the melody, and at a key moment — the appearance of the 
+        film’s title card — all other instruments drop out completely, leaving just the piano.
+        Hisaishi’s music strikes a careful balance between internal and external, focusing on highlighting 
+        the emotions present in a scene without completely disregarding the unfolding action.`,
         path: oneSummerDay,
         //image: oneSummerDayPic,
     },
@@ -314,15 +342,39 @@ export const musicEng = [
         id: 21,
         song_artist: 'Hans Zimmer',
         song_name: 'Interstellar',
-        description: `about`,
+        description: `"Chris said to me, in his casual way. 'So, Hans, if I wrote one page of something, 
+        didn't tell you what it was about, just give you one page, would you give me one day of work?'
+        "Zimmer told Shone. "'Whatever you came up with on that one day would be fine.'" 
+        Zimmer spent a day composing the theme and then showed it to Nolan, and Nolan loved it. 
+        It was only then that Nolan revealed what kind of movie he had in mind. "I asked him, 
+        'Well, yes, but what is the movie?' And he started describing this huge, epic tale of space 
+        and science and humanity, on this epic scale. I’m going, 'Chris, hang on, I’ve just written 
+        this highly personal thing, you know?' He goes, 'Yes, but I now know where the heart of the movie is.
+        'Everything about this movie was personal.'"`,
         path: interstellar,
         //image: interstellarPic,
     },
     {
         id: 22,
-        song_artist: 'Johann Strauss II',
+        song_artist: 'Yiruma',
         song_name: 'River Flows in You',
-        description: `about`,
+        description: `The title could be used as a way to immerse yourself in what the music might be doing.
+         Often described as a work representing the fruition of love, the progress made throughout River 
+         Flows in You could depict how love can grow between people. This work is peaceful, comfortable and loving, 
+         and that is perhaps why it has stayed such a popular work for many years. Although sometimes described 
+         as ‘new-age’ and ‘new-classical’ in genre, Yiruma firmly believes his works reflect that of the popular 
+         music world, whilst also paying homage to classical forms before him. His persistence with the solo piano 
+         genre has allowed his music to be more widely accepted in modern media, as the structure is often reflective 
+         of popular music. This widely-accepted sub-form of classical music has become very popular with other 
+         composers such as Ludovico Einaudi and Jon E Amber producing music of a similar vein. River Flows in 
+         You is built upon repetition of melodic patterns. Similar to the ideals of minimalism, less is always 
+         more with Yiruma’s compositions. Strongly in the key of A major, River Flows in You opens with a 
+         tentative proclamation of the main melodic pattern. There is a sense of holding back at the beginning here, 
+         like the music is unsure how much to play out. The use of arpeggio runs, grace notes and the constant high 
+         register in both hands gives the gentle and relaxing atmosphere to the piece. The structure of this piece
+          can be seen through the repetition of the different patterns that Yiruma uses. From the opening theme, 
+          to the variation, back to the theme again and so on, River Flows in You is like a popular song, with 
+          a repeating theme and slight variations for the 'verses'.`,
         path: riverFlowsInYou,
         //image: riverFlowsInYouPic,
     },
@@ -330,7 +382,15 @@ export const musicEng = [
         id: 23,
         song_artist: 'Yann Tiersen',
         song_name: 'Comptine',
-        description: `about`,
+        description: `Composed as part of the soundtrack for the 2001 film Amélie, Comptine d’un autre été, 
+        l’après midi is one of the most iconic tracks. Composed for solo piano, the title loosely translates 
+        into ‘Nursery Rhyme from Another Summer’. The opening melody is heard once more, this time with the 
+        melody up and octave. The sweetness from the high notes sits on top of the fluctuating left hand 
+        that has not changed yet. The range keeps pushing upwards as the theme is slowly developed by the right hand. 
+        There is a tinge of sadness seeping out at this point which may relate to the feelings of nostalgia when 
+        listening to this work. The piece ends quietly on a single chord as the two hands finally come together. 
+        A simple but effective work for piano that evokes feelings of nostalgia and hope, which also comes 
+        across on screen. `,
         path: tiersenComptine,
         //image: tiersenComptineic,
     },
@@ -338,7 +398,9 @@ export const musicEng = [
         id: 24,
         song_artist: 'John Williams',
         song_name: 'Harry Potter',
-        description: `about`,
+        description: `John Williams is an American composer who composed the soundtracks for the first three 
+        Harry Potter films. Well known in the film industry, he has frequently collaborated with George Lucas 
+        and Steven Spielberg`,
         path: harryPotter,
         //image: harryPotterPic,
     },
@@ -348,7 +410,9 @@ export const musicEng = [
         id: 25,
         song_artist: 'Frank Sinatra',
         song_name: 'Fly Me To The Moon',
-        description: `about`,
+        description: `Simply put, Frank Sinatra’s “Fly Me to the Moon” is centered on the singer being deeply in love. 
+        And the title is a metaphor which is based on how he feels about his significant other. Or “fly me to the moon” 
+        is a fancy way of saying that being with his lover (i.e. the addressee of this song) makes him feel euphoric.`,
         path: flyMeToTheMoon,
         //image: flyMeToTheMoonPic,
     },
@@ -356,7 +420,15 @@ export const musicEng = [
         id: 26,
         song_artist: 'Dave Brubeck',
         song_name: 'Take Five',
-        description: `about`,
+        description: `"It's time that the jazz musicians take up their original role 
+        of leading the public into a more adventurous rhythm," he said.
+        Brubeck said it's a good idea to shake things up a bit, and that's 
+        exactly what he did with the song "Take Five." "It just worked," he says. "You know, 
+        if anyone could ever predict what's going to be a big seller like that, my God, they'd 
+        be driving around in Rolls-Royces; you know, living in castles." "Take Five" spawned a 
+        number of jazz compositions in five-four time from lots of musicians, but you'd probably 
+        be hard-pressed to name any as memorable as "Take Five." It's a jazz standard in its own right. 
+        It is now a requisite for Dave Brubeck anytime he plays live, as well as Joe Morello.`,
         path: takeFive,
         //image: takeFivePic,
     },
@@ -364,7 +436,11 @@ export const musicEng = [
         id: 27,
         song_artist: 'Ella Fitzgerald',
         song_name: 'Misty',
-        description: `about`,
+        description: `"Misty" is a jazz standard written in 1954 by pianist Erroll Garner. 
+        He composed it as an instrumental in the traditional 32-bar format, and recorded it 
+        for the album Contrasts. Lyrics were added later by Johnny Burke. It became the signature 
+        song of Johnny Mathis, appearing on his 1959 album Heavenly and reaching number 12 on the U.S.
+         Pop Singles chart later that year.`,
         path: misty,
         //image: mistyPic,
     },
@@ -372,7 +448,11 @@ export const musicEng = [
         id: 28,
         song_artist: 'Louis Armstrong',
         song_name: 'What A Wonderful World',
-        description: `about`,
+        description: `'What a Wonderful World' is simply about appreciating the beauty of your surroundings.
+        In the song, Louis sings of seeing various events and natural wonders that make him smile, while also 
+        perhaps lamenting the passage of time, noting: "I hear babies crying, I watch them grow, they'll learn
+         much more than I'll never know". Released in 1968, it remains one of the most relaxing and beautiful 
+         pop songs ever made, one of the most timeless songs of all time.`,
         path: wonderfulWorld,
         //image: wonderfulWorldPic,
     },
@@ -380,7 +460,9 @@ export const musicEng = [
         id: 29,
         song_artist: 'Miles Davis',
         song_name: 'So What',
-        description: `about`,
+        description: `"So What" is the first track on the 1959 album Kind of Blue by American trumpeter Miles Davis.
+        It is one of the best-known examples of modal jazz, set in the Dorian mode and consisting of 16 bars of D Dorian, 
+        followed by eight bars of E♭ Dorian and another eight of D Dorian.`,
         path: soWhat,
         //image: soWhatPic,
     },
@@ -388,7 +470,9 @@ export const musicEng = [
         id: 30,
         song_artist: 'Ryo Fukui',
         song_name: 'Autumn Leaves',
-        description: `about`,
+        description: `Ryo Fukui (福居良) was a Japanese jazz pianist. He was born in 1948 in Biratori, Hokkaido. 
+        He released his debut album Scenery in 1976 and was based in Sapporo, where he played regularly at the Slowboat jazz club.
+        As a jazz standard, "Autumn Leaves" has accumulated more than a thousand commercial recordings.`,
         path: autumnLeaves,
         //image: autumnLeavesPic,
     },
@@ -398,7 +482,9 @@ export const musicEng = [
         id: 31,
         song_artist: 'Deep Purple',
         song_name: 'Smoke on the Water',
-        description: `about`,
+        description: `The iconic four-note riff may ring around the speakers of homes forevermore but 
+        the song was inspired by one of the heaviest moments in rock and roll history as it reflects on the smoke
+         billowing out from the Montreux Casino in 1971 a touching the waters that surrounded it.`,
         path: smokeOnTheWater,
         //image: smokeOnTheWaterPic,
     },
@@ -406,7 +492,10 @@ export const musicEng = [
         id: 32,
         song_artist: 'Scorpions',
         song_name: 'Still Loving You',
-        description: `about`,
+        description: `"Still Loving You" is a power ballad[4] by the German hard rock band Scorpions. 
+        It was released on 3 July 1984 as the second single from their ninth studio album, Love at First Sting (1984).
+        The song reached number 64 on the Billboard Hot 100. It was most successful in Europe, reaching the top 5 
+        in several countries.`,
         path: stillLovingYou,
         //image: stillLovingYouPic,
     },
@@ -414,7 +503,11 @@ export const musicEng = [
         id: 33,
         song_artist: 'Led Zeppelin',
         song_name: 'Stairway to Heaven',
-        description: `about`,
+        description: `The song has three sections, each one progressively increasing in tempo and volume. 
+        The song begins in a slow tempo with acoustic instruments (guitar and recorders) before introducing 
+        electric instruments. The final section is an uptempo hard rock arrangement highlighted by Page's guitar 
+        solo (considered by many to be one of the greatest ever[9][additional citation(s) needed]) accompanying 
+        Plant's vocals that end with the plaintive a cappella line: "And she's buying a stairway to heaven."`,
         path: stairwayToHeaven,
         //image: stairwayToHeavenPic,
     },
@@ -422,7 +515,11 @@ export const musicEng = [
         id: 34,
         song_artist: 'Pink Floyd',
         song_name: 'Dark Side of the Moon',
-        description: `about`,
+        description: `There are hit albums, and then there’s Dark Side of the Moon. Pink Floyd‘s eternally 
+        popular song cycle has sold more than 15 million copies in the U.S. since its release on March 1st, 
+        1973, and more than 45 million units worldwide. A true colossus of classic rock, the album made its 
+        creators — bassist/vocalist Roger Waters, guitarist/vocalist David Gilmour, keyboardist/vocalist Rick Wright, 
+        and drummer Nick Mason — incredibly wealthy, and ultimately spent a mind-boggling 937 weeks on the Billboard 200.`,
         path: darkSide,
         //image: darkSidePic,
     },
@@ -430,15 +527,22 @@ export const musicEng = [
         id: 35,
         song_artist: 'Guns N’Roses',
         song_name: 'Knocking on Heavens Door',
-        description: `about`,
+        description: `GNR's studio version first appeared on the soundtrack for the 1990 Tom Cruise movie Days of Thunder, 
+        with spoken-word responses during the second verse. Those were omitted from the mix that appeared on Use Your 
+        Illusion II the following year. The song was released as a single in May 1992, charting around the world - including at No. 
+        18 on Billboard’s Mainstream Rock Songs survey.`,
         path: knocking,
         //image: knockingPic,
     },
     {
         id: 36,
         song_artist: 'Queen',
-        song_name: 'show must go on',
-        description: `about`,
+        song_name: 'Show Must Go On',
+        description: `The Show Must Go On is a song by Queen. It was written by Freddie Mercury and Brian 
+        May for the band's 1991 album Innuendo. It was also released as a single with Keep Yourself Alive on the B-side.
+        Written as a collaborative effort between Mercury and May, the song tells the listener to face life head-on, 
+        no matter the hardships that come their way. The lyrics themselves allude to Freddie Mercury's declining health 
+        from his battle with AIDs, which he was slowly succumbing to at the time of recording.`,
         path: queenShow,
         //image: queenShowPic,
     },
