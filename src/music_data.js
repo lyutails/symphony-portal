@@ -8,7 +8,7 @@ import moonlightBeethoven from '../refs/music/classic_western/Beethoven_Moonligh
 import standchenSchubert from '../refs/music/classic_western/Schubert_Standchen.mp3';
 
 //import furElisePic from '../refs/notes/fur_elise_notes.svg';
-// import mountainKingPic from '../refs/notes/greig in the hall of the mountain king.svg';
+// import mountainKingPic from '.r./efs/notes/greig in the hall of the mountain king.svg';
 // import clairDeLunePic from '../refs/notes/debussy clair de lune.svg';
 
 

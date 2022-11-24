@@ -27,6 +27,11 @@ export const createSong = (song, isRight, nextLevel) => {
     songName.classList.add('song_name');
     songHolder.appendChild(songName);
 
+    const dash = document.createElement('div');
+    dash.classList.add('dash');
+    songHolder.appendChild(dash);
+    dash.textContent = '-';
+    
     const songArtist = document.createElement('div');
     songArtist.classList.add('song_artist');
     songHolder.appendChild(songArtist);
@@ -40,7 +45,7 @@ export const createSong = (song, isRight, nextLevel) => {
         songNameHolder.textContent = isRight ? musicEng[state.currentStep][state.correctAnswer].song_name : '*****';  
         songPic.style.backgroundImage = isRight ? musicEng[state.currentStep][state.correctAnswer].image : '../refs/light/piano.png';
         songInfo.textContent = isRight ? musicEng[state.currentStep][state.correctAnswer].description : '';
-        if (isRight) nextLevel.classList.toggle('disabled');         
+        if (isRight) nextLevel.classList.toggle('disabled');       
     })
     return songHolder;
 }

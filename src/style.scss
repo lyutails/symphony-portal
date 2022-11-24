@@ -1246,6 +1246,14 @@ input[type=range]::-ms-track {
     }
 }
 
+.dash {
+    width: 30px;
+    font-family: 'Roboto Regular';
+    font-size: 20px;
+    color: $text_dark;
+    text-align: center;
+}
+
 .song_info {
     width: 817px;
     height: 311px;
