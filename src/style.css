@@ -976,7 +976,7 @@ input[type=range]::-ms-track {
   cursor: pointer;
 }
 .volume_icon.active {
-  background-image: url("../refs/light/music_sound_icon .png");
+  background-image: url("../refs/light/music_sound_icon.png");
 }
 
 .volume_slider {
