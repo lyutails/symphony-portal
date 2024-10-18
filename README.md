@@ -1,6 +1,6 @@
 # Symphony Portal 🎵
 
-<img src="./symphony-portal_screenshot.JPG">
+<img src="./symphony-portal_screenshot_01.JPG">
 
 ## deploy
 
