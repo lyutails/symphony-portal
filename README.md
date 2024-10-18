@@ -1,15 +1,8 @@
-# 🚀 Welcome to your new awesome project!
+# Symphony Portal 🎵
 
-This project has been created using **webpack-cli**, you can now run
+<img src="./symphony-portal_screenshot.JPG">
 
-```
-npm run build
-```
+## deploy
 
-or
+https://lyutails.github.io/symphony-portal/
 
-```
-yarn build
-```
-
-to bundle your application
