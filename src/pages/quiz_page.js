@@ -115,7 +115,6 @@ export function quizPage() {
   player.value = "0";
   player.min = "1";
   player.max = "100";
-  player.onchange = seekTo();
 
   const playerTime = document.createElement("div");
   playerTime.classList.add("player_time");
@@ -139,10 +138,6 @@ export function quizPage() {
   volumeIcon.classList.add("volume_icon", "active");
   volumeContainer.appendChild(volumeIcon);
 
-  volumeIcon.addEventListener("click", () => {
-    volumeIcon.classList.toggle("active");
-  });
-
   const volumeSlider = document.createElement("input");
   volumeSlider.classList.add("volume_slider");
   volumeSlider.setAttribute("type", "range");
@@ -150,7 +145,6 @@ export function quizPage() {
   volumeSlider.value = "99";
   volumeSlider.min = "1";
   volumeSlider.max = "100";
-  volumeSlider.onchange = setVolume();
 
   let track_index = random(0, 6);
   let isPlaying = false;
@@ -171,6 +165,8 @@ export function quizPage() {
     current_track.load();
 
     updateTimer = setInterval(seekUpdate, 1000);
+
+    console.log(current_track);
   }
 
   function resetValues() {
@@ -201,14 +197,20 @@ export function quizPage() {
     isPlaying = false;
   }
 
-  function seekTo() {
-    // let seekto = current_track.duration * (player.value / 100);
-    // current_track.currentTime = seekto;
-  }
+  volumeIcon.addEventListener("click", () => {
+    volumeIcon.classList.toggle("active");
+    if (volumeIcon.classList.contains("active")) {
+      current_track.volume = 1;
+    } else {
+      current_track.volume = 0;
+    }
+  });
 
-  function setVolume() {
-    //current_track.volume = volumeSlider.value / 100;
-  }
+  volumeSlider.addEventListener("change", () => {
+    if (current_track) {
+      current_track.volume = volumeSlider.value / 100;
+    }
+  });
 
   function seekUpdate() {
     let seekPosition = 0;

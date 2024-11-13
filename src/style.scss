@@ -1037,6 +1037,7 @@ input[type="range"]::-ms-track {
   width: 42px;
   height: 42px;
   background-image: url("../refs/light/music_mute_sound_icon.png");
+  background-repeat: no-repeat;
 
   &:hover {
     cursor: pointer;
@@ -1049,7 +1050,7 @@ input[type="range"]::-ms-track {
 
 .volume_slider {
   -webkit-appearance: none;
-  width: 198px;
+  max-width: 200px;
   height: 15px;
   background: transparent;
 }
@@ -1174,10 +1175,4 @@ input[type="range"]::-ms-track {
   pointer-events: none;
   user-select: none;
   opacity: 0.5;
-}
-
-@media screen and (min-width: 450px) and (max-width: 767.9px) {
-}
-
-@media screen and (min-width: 450px) and (max-width: 767.9px) {
 }
