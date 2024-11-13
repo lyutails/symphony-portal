@@ -6,6 +6,7 @@ const locationResolver = (location) => {
   console.log("location is", location);
   switch (location) {
     default:
+      document.body.replaceChildren();
       homePage();
       break;
     case "#/homePage/": {
@@ -21,8 +22,11 @@ const locationResolver = (location) => {
   }
 };
 
+locationResolver();
+
 window.addEventListener("hashchange", () => {
   const location = window.location.hash;
+  console.log("location is", location);
   if (location) {
     locationResolver(location);
   }
