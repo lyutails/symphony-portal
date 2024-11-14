@@ -55,6 +55,10 @@ $portal_colour_one: #16ffd0;
 $portal_colour_two: #16b0ff;
 $portal_colour_three: #ffa51e;
 
+input[type='checkbox'] {
+  visibility: hidden;
+}
+
 .body {
   width: 100vw;
   height: 100vh;
@@ -879,7 +883,7 @@ $portal_colour_three: #ffa51e;
   background-color: $main_menu_light;
   text-align: center;
   line-height: 70px;
-  border-radius: 13px 0px 0px 13px;
+  border-radius: 0px 0px 0px 0px;
   transition: all 0.2s ease-in-out;
 
   &.active {
@@ -888,10 +892,14 @@ $portal_colour_three: #ffa51e;
     font-size: 24px;
     background-color: $main_menu_light_hover;
   }
-}
 
-.music_tab {
-  cursor: pointer;
+  &:first-child {
+    border-radius: 13px 0px 0px 13px;
+  }
+
+  &:last-child {
+    border-radius: 0px 13px 13px 0px;
+  }
 }
 
 .player_block {

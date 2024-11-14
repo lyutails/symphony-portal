@@ -47,6 +47,8 @@ export const createSong = (song, isRight, nextLevel) => {
   songHolder.addEventListener("click", () => {
     //songHolder.setAttribute('style', `background-color: ${isRight ? 'blue' : 'red'}`);
     songHolder.style.backgroundColor = `${isRight ? "blue" : "red"}`;
+    songHolder.style.color = `${isRight ? "white" : "black"}`;
+    songHolder.style.paddingLeft = '10px';
     songNameHolder.textContent = isRight
       ? musicEng[state.currentStep][state.correctAnswer].song_name
       : "*****";
@@ -65,7 +67,12 @@ export const createSong = (song, isRight, nextLevel) => {
     }
     drawScore();
     //scoreCount.textContent = isRight ? state.scoreCorrectFirstAttempt : 0;
-    if (isRight) nextLevel.classList.toggle("disabled");
+    if (isRight) {
+      nextLevel.classList.toggle("disabled");
+    }
+    if (state.currentStep === 5) {
+      nextLevel.classList.add("disabled");
+    }
   });
   return songHolder;
 };

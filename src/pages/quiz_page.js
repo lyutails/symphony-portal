@@ -165,8 +165,6 @@ export function quizPage() {
     current_track.load();
 
     updateTimer = setInterval(seekUpdate, 1000);
-
-    console.log(current_track);
   }
 
   function resetValues() {
