@@ -55,7 +55,6 @@ export function quizPage() {
   menuCenter.addEventListener("click", function (d) {
     menuCenter.classList.add("active");
     menuLeft.classList.remove("active");
-    menuRight.classList.remove("active");
   });
 
   const quiz = document.createElement("span");
